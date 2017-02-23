@@ -8,10 +8,14 @@ package gui_forma;
 import java.awt.HeadlessException;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import kandidat.Kandidat;
 
@@ -37,36 +41,159 @@ public class forma extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jlblBrPrijave = new javax.swing.JLabel();
-        jlblSifraZadatka = new javax.swing.JLabel();
-        jtxtBrPrijave = new javax.swing.JTextField();
-        jtxtSifraZadatka = new javax.swing.JTextField();
+        formaKurs = new javax.swing.JFrame();
+        jbtnNedelja1 = new javax.swing.JButton();
+        jbtnNedelja2 = new javax.swing.JButton();
+        jbtnNedelja3 = new javax.swing.JButton();
+        jbtnNedelja4 = new javax.swing.JButton();
+        jbtnNedelja5 = new javax.swing.JButton();
+        jbtnNedelja6 = new javax.swing.JButton();
+        jbtnNedelja7 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jlblBrIndeksa = new javax.swing.JLabel();
+        jlblimeIPrezime = new javax.swing.JLabel();
+        jtxtBrIndeksa = new javax.swing.JTextField();
+        jtxtimeIPrezime = new javax.swing.JTextField();
         jbtnPocni = new javax.swing.JButton();
         jbtnPrikazi = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jbtnPocniKurs = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        formaKurs.setTitle("Računarske mreže i telekomunikacije");
+        formaKurs.setPreferredSize(new java.awt.Dimension(600, 600));
+        formaKurs.setSize(new java.awt.Dimension(1000, 600));
 
-        jlblBrPrijave.setText("Broj prijave:");
-
-        jlblSifraZadatka.setText("Sifra zadatka:");
-
-        jtxtBrPrijave.addActionListener(new java.awt.event.ActionListener() {
+        jbtnNedelja1.setText("Uvod");
+        jbtnNedelja1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtBrPrijaveActionPerformed(evt);
+                jbtnNedelja1ActionPerformed(evt);
             }
         });
 
-        jbtnPocni.setText("Pocni");
+        jbtnNedelja2.setText("Aplikativni sloj");
+        jbtnNedelja2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnNedelja2ActionPerformed(evt);
+            }
+        });
+
+        jbtnNedelja3.setText("UDP i GBN");
+        jbtnNedelja3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnNedelja3ActionPerformed(evt);
+            }
+        });
+
+        jbtnNedelja4.setText("TCP");
+        jbtnNedelja4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnNedelja4ActionPerformed(evt);
+            }
+        });
+
+        jbtnNedelja5.setText("Kontrola zagušenja");
+        jbtnNedelja5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnNedelja5ActionPerformed(evt);
+            }
+        });
+
+        jbtnNedelja6.setText("Mrežni sloj");
+        jbtnNedelja6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnNedelja6ActionPerformed(evt);
+            }
+        });
+
+        jbtnNedelja7.setText("Ruter");
+        jbtnNedelja7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnNedelja7ActionPerformed(evt);
+            }
+        });
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane2.setViewportView(jTextArea2);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 437, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane2)
+        );
+
+        javax.swing.GroupLayout formaKursLayout = new javax.swing.GroupLayout(formaKurs.getContentPane());
+        formaKurs.getContentPane().setLayout(formaKursLayout);
+        formaKursLayout.setHorizontalGroup(
+            formaKursLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formaKursLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(formaKursLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jbtnNedelja7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbtnNedelja6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbtnNedelja5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbtnNedelja4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbtnNedelja3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbtnNedelja2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbtnNedelja1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        formaKursLayout.setVerticalGroup(
+            formaKursLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formaKursLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jbtnNedelja1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jbtnNedelja2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jbtnNedelja3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jbtnNedelja4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jbtnNedelja5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jbtnNedelja6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jbtnNedelja7)
+                .addContainerGap(348, Short.MAX_VALUE))
+            .addGroup(formaKursLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Računarske mreže i telekomunikacije");
+
+        jlblBrIndeksa.setText("Broj indeksa:");
+
+        jlblimeIPrezime.setText("Ime i prezime:");
+
+        jtxtBrIndeksa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtBrIndeksaActionPerformed(evt);
+            }
+        });
+
+        jbtnPocni.setText("Počni");
         jbtnPocni.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbtnPocniActionPerformed(evt);
             }
         });
 
-        jbtnPrikazi.setText("Prikazi rezultate");
+        jbtnPrikazi.setText("Prikaži rezultate");
         jbtnPrikazi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbtnPrikaziActionPerformed(evt);
@@ -88,6 +215,13 @@ public class forma extends javax.swing.JFrame {
             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
         );
 
+        jbtnPocniKurs.setText("Počni kurs");
+        jbtnPocniKurs.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnPocniKursActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -96,17 +230,19 @@ public class forma extends javax.swing.JFrame {
                 .addGap(78, 78, 78)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jlblBrPrijave)
+                        .addComponent(jlblBrIndeksa)
                         .addGap(18, 18, 18)
-                        .addComponent(jtxtBrPrijave))
+                        .addComponent(jtxtBrIndeksa))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jlblSifraZadatka)
+                        .addComponent(jlblimeIPrezime)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jbtnPrikazi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jbtnPocni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jtxtSifraZadatka))))
-                .addContainerGap(136, Short.MAX_VALUE))
+                            .addComponent(jtxtimeIPrezime))))
+                .addGap(18, 18, 18)
+                .addComponent(jbtnPocniKurs)
+                .addContainerGap(37, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -117,16 +253,18 @@ public class forma extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(65, 65, 65)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlblBrPrijave)
-                    .addComponent(jtxtBrPrijave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jlblBrIndeksa)
+                    .addComponent(jtxtBrIndeksa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlblSifraZadatka)
-                    .addComponent(jtxtSifraZadatka, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jlblimeIPrezime)
+                    .addComponent(jtxtimeIPrezime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addComponent(jbtnPocni)
                 .addGap(37, 37, 37)
-                .addComponent(jbtnPrikazi)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbtnPrikazi)
+                    .addComponent(jbtnPocniKurs))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -137,25 +275,69 @@ public class forma extends javax.swing.JFrame {
 
     private void jbtnPocniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPocniActionPerformed
        try{
-        PrintWriter datoteka=new PrintWriter(new BufferedWriter(new FileWriter("Kandidati.txt", true)));
-        Object[] options = {"A","B","C","D","E","N"};
+              // BufferedReader pitanja=new BufferedReader(new FileReader("Poruke.txt"));
+            PrintWriter datoteka=new PrintWriter(new BufferedWriter(new FileWriter("Kandidati.txt", true)));
+           
+            
+            
+            
+        if(jtxtBrIndeksa.getText().equals("") || jtxtimeIPrezime.getText().equals("")){
+            JOptionPane.showMessageDialog(jbtnPocni,
+                "Sva polja moraju biti popunjena! ",
+                "Greska",
+                JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
         Kandidat kandidat=new Kandidat();
-       for(int brPitanja=1;brPitanja<=20;brPitanja++){
-int n = JOptionPane.showOptionDialog(jbtnPocni,
-    "Odgovor: ",
-    "Pitanje br: "+brPitanja,
+        
+        Object[] options = {"lako","srednje","tesko"};
+        int tezina = JOptionPane.showOptionDialog(jbtnPocni,
+    "izaberi tezinu: ",
+    "tezina kviza",
     JOptionPane.DEFAULT_OPTION,
     JOptionPane.PLAIN_MESSAGE,
     null,
     options,
     null);
-    Object odgovor= options[n];
-    kandidat.getResenja().add(odgovor);
-        }
-       kandidat.setBrPrijave((jtxtBrPrijave.getText()));
-       kandidat.setSifraZadatka((jtxtSifraZadatka.getText()));
+    Object odgovor= options[tezina];
+        
+         switch(odgovor.toString()){
+             case "lako":
+                 otvoriLakTest(kandidat);
+                 kandidat.setNivo("lak");
+                 break;
+             case "srednje":
+                 otvoriSrednjiTest(kandidat);
+                 kandidat.setNivo("srednji");
+                 break;
+             case "tesko":
+                 otvoriTezakTest(kandidat);
+                 kandidat.setNivo("tezak");
+                 break;
+         }
+                 
+        String polozio="";
+       if(kandidat.getBrTacnih()>=6){
+           polozio="Jeste polozio";
+           kandidat.setPolozio(true);
+       }
+       else{
+           polozio="Nije polozio";
+           kandidat.setPolozio(false);
+       }
+       
+       JOptionPane.showMessageDialog(this,
+    "Broj tacnih odgovora: "+kandidat.getBrTacnih()+"\nBroj netacnih odgovora: "
+            +kandidat.getBrNetacnih()+"\n"+polozio,
+    "Resenje",
+    JOptionPane.PLAIN_MESSAGE);
+       
+       kandidat.setBrIndeksa((jtxtBrIndeksa.getText()));
+       kandidat.setimeIPrezime((jtxtimeIPrezime.getText()));
        datoteka.println(kandidat.toString());
        datoteka.close();
+       
        }catch(IOException | HeadlessException | NumberFormatException e){
           JOptionPane.showMessageDialog(null,
     "Greska pri upisivanju kandidata! ",
@@ -164,9 +346,9 @@ int n = JOptionPane.showOptionDialog(jbtnPocni,
        }
     }//GEN-LAST:event_jbtnPocniActionPerformed
 
-    private void jtxtBrPrijaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtBrPrijaveActionPerformed
+    private void jtxtBrIndeksaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtBrIndeksaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jtxtBrPrijaveActionPerformed
+    }//GEN-LAST:event_jtxtBrIndeksaActionPerformed
 
     private void jbtnPrikaziActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPrikaziActionPerformed
         try{
@@ -187,6 +369,150 @@ int n = JOptionPane.showOptionDialog(jbtnPocni,
     JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jbtnPrikaziActionPerformed
+
+    private void jbtnPocniKursActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPocniKursActionPerformed
+        formaKurs.setVisible(true);
+    }//GEN-LAST:event_jbtnPocniKursActionPerformed
+
+    private void jbtnNedelja1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnNedelja1ActionPerformed
+        try {
+            BufferedReader datoteka=new BufferedReader(new FileReader("nedelja1.txt"));
+             boolean kraj=false;
+            String tekst="";
+            while(!kraj){
+                String pom=datoteka.readLine();
+                if(pom==null) kraj=true;
+                else tekst=tekst+pom+"\n";
+            }
+            jTextArea2.setText(tekst);
+            datoteka.close();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null,
+            "Greska pri prikazivanju teksta! ",
+            "Greska",
+            JOptionPane.ERROR_MESSAGE);      
+        }
+    }//GEN-LAST:event_jbtnNedelja1ActionPerformed
+
+    private void jbtnNedelja2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnNedelja2ActionPerformed
+        try {
+            BufferedReader datoteka=new BufferedReader(new FileReader("nedelja2.txt"));
+             boolean kraj=false;
+            String tekst="";
+            while(!kraj){
+                String pom=datoteka.readLine();
+                if(pom==null) kraj=true;
+                else tekst=tekst+pom+"\n";
+            }
+            jTextArea2.setText(tekst);
+            datoteka.close();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null,
+            "Greska pri prikazivanju teksta! ",
+            "Greska",
+            JOptionPane.ERROR_MESSAGE);        
+}  
+    }//GEN-LAST:event_jbtnNedelja2ActionPerformed
+
+    private void jbtnNedelja3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnNedelja3ActionPerformed
+        try {
+            BufferedReader datoteka=new BufferedReader(new FileReader("nedelja3.txt"));
+             boolean kraj=false;
+            String tekst="";
+            while(!kraj){
+                String pom=datoteka.readLine();
+                if(pom==null) kraj=true;
+                else tekst=tekst+pom+"\n";
+            }
+            jTextArea2.setText(tekst);
+            datoteka.close();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null,
+            "Greska pri prikazivanju teksta! ",
+            "Greska",
+            JOptionPane.ERROR_MESSAGE);        
+}  
+    }//GEN-LAST:event_jbtnNedelja3ActionPerformed
+
+    private void jbtnNedelja4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnNedelja4ActionPerformed
+        try {
+            BufferedReader datoteka=new BufferedReader(new FileReader("nedelja4.txt"));
+             boolean kraj=false;
+            String tekst="";
+            while(!kraj){
+                String pom=datoteka.readLine();
+                if(pom==null) kraj=true;
+                else tekst=tekst+pom+"\n";
+            }
+            jTextArea2.setText(tekst);
+            datoteka.close();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null,
+            "Greska pri prikazivanju teksta! ",
+            "Greska",
+            JOptionPane.ERROR_MESSAGE);        
+}  
+    }//GEN-LAST:event_jbtnNedelja4ActionPerformed
+
+    private void jbtnNedelja5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnNedelja5ActionPerformed
+        try {
+            BufferedReader datoteka=new BufferedReader(new FileReader("nedelja5.txt"));
+             boolean kraj=false;
+            String tekst="";
+            while(!kraj){
+                String pom=datoteka.readLine();
+                if(pom==null) kraj=true;
+                else tekst=tekst+pom+"\n";
+            }
+            jTextArea2.setText(tekst);
+            datoteka.close();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null,
+            "Greska pri prikazivanju teksta! ",
+            "Greska",
+            JOptionPane.ERROR_MESSAGE);        
+}  
+    }//GEN-LAST:event_jbtnNedelja5ActionPerformed
+
+    private void jbtnNedelja6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnNedelja6ActionPerformed
+        try {
+            BufferedReader datoteka=new BufferedReader(new FileReader("nedelja6.txt"));
+             boolean kraj=false;
+            String tekst="";
+            while(!kraj){
+                String pom=datoteka.readLine();
+                if(pom==null) kraj=true;
+                else tekst=tekst+pom+"\n";
+            }
+            jTextArea2.setText(tekst);
+            datoteka.close();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null,
+            "Greska pri prikazivanju teksta! ",
+            "Greska",
+            JOptionPane.ERROR_MESSAGE);        
+}  
+    }//GEN-LAST:event_jbtnNedelja6ActionPerformed
+
+    private void jbtnNedelja7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnNedelja7ActionPerformed
+        try {
+            BufferedReader datoteka=new BufferedReader(new FileReader("nedelja7.txt"));
+             boolean kraj=false;
+            String tekst="";
+            while(!kraj){
+                String pom=datoteka.readLine();
+                if(pom==null) kraj=true;
+                else tekst=tekst+pom+"\n";
+            }
+            jTextArea2.setText(tekst);
+            datoteka.close();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null,
+            "Greska pri prikazivanju teksta! ",
+            "Greska",
+            JOptionPane.ERROR_MESSAGE);        
+}  
+    }//GEN-LAST:event_jbtnNedelja7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -223,15 +549,157 @@ int n = JOptionPane.showOptionDialog(jbtnPocni,
         });
     }
 
+    void otvoriLakTest(Kandidat kandidat){
+        try{
+         BufferedReader pitanja=new BufferedReader(new FileReader("PitanjaLak.txt"));
+        Object[] options = {"tacno","netacno"}; 
+        
+        for(int brPitanja=1;brPitanja<=10;brPitanja++){ 
+    int n = JOptionPane.showOptionDialog(jbtnPocni,
+    pitanja.readLine()+"\n"+pitanja.readLine(),
+    "Pitanje br: "+brPitanja,
+    JOptionPane.DEFAULT_OPTION,
+    JOptionPane.PLAIN_MESSAGE,
+    null,
+    options,
+    null);
+    Object odgovor= options[n];
+    String tacanOdg=pitanja.readLine();
+    
+    
+        if(odgovor.equals(tacanOdg)){
+        JOptionPane.showMessageDialog(this,
+    "Tacan odgovor! ",
+    "Pitanje br: "+brPitanja,
+    JOptionPane.PLAIN_MESSAGE);
+   
+        kandidat.setBrTacnih(kandidat.getBrTacnih()+1);
+    }else{
+        JOptionPane.showMessageDialog(this,
+    "Netacan odgovor! ",
+    "Pitanje br: "+brPitanja,
+    JOptionPane.PLAIN_MESSAGE);
+        
+        kandidat.setBrNetacnih(kandidat.getBrNetacnih()+1);
+    }
+        }
+    
+    }catch(Exception e){
+        JOptionPane.showMessageDialog(null,
+    "Greska pri pokretanju kviza! ",
+    "Greska",
+    JOptionPane.ERROR_MESSAGE);
+    }
+    }
+    void otvoriSrednjiTest(Kandidat kandidat){
+        try{
+         BufferedReader pitanja=new BufferedReader(new FileReader("PitanjaSrednji.txt"));
+        Object[] options = {"A","B","C","D","E"}; 
+        
+        for(int brPitanja=1;brPitanja<=10;brPitanja++){ 
+    int n = JOptionPane.showOptionDialog(jbtnPocni,
+    pitanja.readLine()+"\n"+pitanja.readLine(),
+    "Pitanje br: "+brPitanja,
+    JOptionPane.DEFAULT_OPTION,
+    JOptionPane.PLAIN_MESSAGE,
+    null,
+    options,
+    null);
+    Object odgovor= options[n];
+    String tacanOdg=pitanja.readLine();
+    
+    
+        if(odgovor.equals(tacanOdg)){
+        JOptionPane.showMessageDialog(this,
+    "Tacan odgovor! ",
+    "Pitanje br: "+brPitanja,
+    JOptionPane.PLAIN_MESSAGE);
+   
+        kandidat.setBrTacnih(kandidat.getBrTacnih()+1);
+    }else{
+        JOptionPane.showMessageDialog(this,
+    "Netacan odgovor! ",
+    "Pitanje br: "+brPitanja,
+    JOptionPane.PLAIN_MESSAGE);
+        
+        kandidat.setBrNetacnih(kandidat.getBrNetacnih()+1);
+    }
+        }
+    
+    }catch(Exception e){
+        JOptionPane.showMessageDialog(null,
+    "Greska pri pokretanju kviza! ",
+    "Greska",
+    JOptionPane.ERROR_MESSAGE);
+    }
+    }
+    
+    void otvoriTezakTest(Kandidat kandidat){
+        try{
+         BufferedReader pitanja=new BufferedReader(new FileReader("PitanjaTezak.txt"));
+        Object[] options = {"A","B","C","D","E","N"}; 
+        
+        for(int brPitanja=1;brPitanja<=10;brPitanja++){ 
+    int n = JOptionPane.showOptionDialog(jbtnPocni,
+    pitanja.readLine()+"\n"+pitanja.readLine(),
+    "Pitanje br: "+brPitanja,
+    JOptionPane.DEFAULT_OPTION,
+    JOptionPane.PLAIN_MESSAGE,
+    null,
+    options,
+    null);
+    Object odgovor= options[n];
+    String tacanOdg=pitanja.readLine();
+    
+    if(odgovor.equals("N")){
+        continue;
+    }else{
+        if(odgovor.equals(tacanOdg)){
+        JOptionPane.showMessageDialog(this,
+    "Tacan odgovor! ",
+    "Pitanje br: "+brPitanja,
+    JOptionPane.PLAIN_MESSAGE);
+   
+        kandidat.setBrTacnih(kandidat.getBrTacnih()+1);
+    }else{
+        JOptionPane.showMessageDialog(this,
+    "Netacan odgovor! ",
+    "Pitanje br: "+brPitanja,
+    JOptionPane.PLAIN_MESSAGE);
+        
+        kandidat.setBrNetacnih(kandidat.getBrNetacnih()+1);
+    }
+        }
+       }
+    
+    }catch(Exception e){
+        JOptionPane.showMessageDialog(null,
+    "Greska pri pokretanju kviza! ",
+    "Greska",
+    JOptionPane.ERROR_MESSAGE);
+    }
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JFrame formaKurs;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JButton jbtnNedelja1;
+    private javax.swing.JButton jbtnNedelja2;
+    private javax.swing.JButton jbtnNedelja3;
+    private javax.swing.JButton jbtnNedelja4;
+    private javax.swing.JButton jbtnNedelja5;
+    private javax.swing.JButton jbtnNedelja6;
+    private javax.swing.JButton jbtnNedelja7;
     private javax.swing.JButton jbtnPocni;
+    private javax.swing.JButton jbtnPocniKurs;
     private javax.swing.JButton jbtnPrikazi;
-    private javax.swing.JLabel jlblBrPrijave;
-    private javax.swing.JLabel jlblSifraZadatka;
-    private javax.swing.JTextField jtxtBrPrijave;
-    private javax.swing.JTextField jtxtSifraZadatka;
+    private javax.swing.JLabel jlblBrIndeksa;
+    private javax.swing.JLabel jlblimeIPrezime;
+    private javax.swing.JTextField jtxtBrIndeksa;
+    private javax.swing.JTextField jtxtimeIPrezime;
     // End of variables declaration//GEN-END:variables
 }

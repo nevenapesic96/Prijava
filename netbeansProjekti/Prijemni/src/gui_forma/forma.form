@@ -1,8 +1,157 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JFrame" name="formaKurs">
+      <Properties>
+        <Property name="title" type="java.lang.String" value="Ra&#x10d;unarske mre&#x17e;e i telekomunikacije"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[600, 600]"/>
+        </Property>
+        <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1000, 600]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel2" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jbtnNedelja7" max="32767" attributes="0"/>
+                      <Component id="jbtnNedelja6" max="32767" attributes="0"/>
+                      <Component id="jbtnNedelja5" max="32767" attributes="0"/>
+                      <Component id="jbtnNedelja4" max="32767" attributes="0"/>
+                      <Component id="jbtnNedelja3" max="32767" attributes="0"/>
+                      <Component id="jbtnNedelja2" max="32767" attributes="0"/>
+                      <Component id="jbtnNedelja1" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="jbtnNedelja1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jbtnNedelja2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jbtnNedelja3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jbtnNedelja4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jbtnNedelja5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jbtnNedelja6" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jbtnNedelja7" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="348" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel2" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jbtnNedelja1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Uvod"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnNedelja1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnNedelja2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Aplikativni sloj"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnNedelja2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnNedelja3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="UDP i GBN"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnNedelja3ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnNedelja4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="TCP"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnNedelja4ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnNedelja5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Kontrola zagu&#x161;enja"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnNedelja5ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnNedelja6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Mre&#x17e;ni sloj"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnNedelja6ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnNedelja7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ruter"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnNedelja7ActionPerformed"/>
+          </Events>
+        </Component>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane2" alignment="0" pref="437" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea2">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Ra&#x10d;unarske mre&#x17e;e i telekomunikacije"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -27,21 +176,23 @@
               <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jlblBrPrijave" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlblBrIndeksa" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jtxtBrPrijave" max="32767" attributes="0"/>
+                      <Component id="jtxtBrIndeksa" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jlblSifraZadatka" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlblimeIPrezime" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jbtnPrikazi" max="32767" attributes="0"/>
                           <Component id="jbtnPocni" max="32767" attributes="0"/>
-                          <Component id="jtxtSifraZadatka" max="32767" attributes="0"/>
+                          <Component id="jtxtimeIPrezime" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="136" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jbtnPocniKurs" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="37" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
@@ -55,18 +206,21 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jlblBrPrijave" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jtxtBrPrijave" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jlblBrIndeksa" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtxtBrIndeksa" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jlblSifraZadatka" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jtxtSifraZadatka" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jlblimeIPrezime" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtxtimeIPrezime" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               <Component id="jbtnPocni" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-              <Component id="jbtnPrikazi" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jbtnPrikazi" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtnPocniKurs" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace pref="33" max="32767" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -75,26 +229,26 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jlblBrPrijave">
+    <Component class="javax.swing.JLabel" name="jlblBrIndeksa">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Broj prijave:"/>
+        <Property name="text" type="java.lang.String" value="Broj indeksa:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jlblSifraZadatka">
+    <Component class="javax.swing.JLabel" name="jlblimeIPrezime">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Sifra zadatka:"/>
+        <Property name="text" type="java.lang.String" value="Ime i prezime:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jtxtBrPrijave">
+    <Component class="javax.swing.JTextField" name="jtxtBrIndeksa">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtxtBrPrijaveActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtxtBrIndeksaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jtxtSifraZadatka">
+    <Component class="javax.swing.JTextField" name="jtxtimeIPrezime">
     </Component>
     <Component class="javax.swing.JButton" name="jbtnPocni">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Pocni"/>
+        <Property name="text" type="java.lang.String" value="Po&#x10d;ni"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnPocniActionPerformed"/>
@@ -102,7 +256,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jbtnPrikazi">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Prikazi rezultate"/>
+        <Property name="text" type="java.lang.String" value="Prika&#x17e;i rezultate"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnPrikaziActionPerformed"/>
@@ -137,5 +291,13 @@
         </Container>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JButton" name="jbtnPocniKurs">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Po&#x10d;ni kurs"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnPocniKursActionPerformed"/>
+      </Events>
+    </Component>
   </SubComponents>
 </Form>
